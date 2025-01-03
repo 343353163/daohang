@@ -1,10 +1,47 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-	</head>
-	<body>
-		<h1>这是我自己用的导航</h1>
-	</body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>除夕倒计时</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      color: #e74c3c;
+    }
+
+    p {
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>距离除夕还有多久</h1>
+  <p id="countdown"></p>
+
+  <script>
+    // 设置除夕的日期时间，每年不同，这里假设下一年除夕是2026年2月7日 00:00:00，你可按需修改
+    const newYearEve = new Date('2026-02-07T00:00:00');
+    function updateCountdown() {
+      const now = new Date();
+      const diff = newYearEve - now;
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+      const countdownText = `距离除夕还有：${days}天 ${hours}小时 ${minutes}分钟 ${seconds}秒`;
+      document.getElementById('countdown').innerHTML = countdownText;
+      setTimeout(updateCountdown, 1000);
+    }
+    updateCountdown();
+  </script>
+</body>
+
 </html>
