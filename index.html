@@ -7,17 +7,30 @@
   <title>除夕倒计时</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f4f4f4;
+      font-family: 'Roboto', sans-serif;
+      background-image: url('https://example.com/your-background-image.jpg'); /* 替换为你喜欢的背景图片链接 */
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
 
     h1 {
-      color: #e74c3c;
+      color: #ff6b6b;
+      font-size: 48px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      margin-bottom: 30px;
     }
 
     p {
-      font-size: 24px;
+      color: #fff;
+      font-size: 32px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
@@ -27,8 +40,10 @@
   <p id="countdown"></p>
 
   <script>
-    // 设置除夕的日期时间，每年不同，这里假设下一年除夕是2026年2月7日 00:00:00，你可按需修改
-    const newYearEve = new Date('2026-02-07T00:00:00');
+    // 获取当前年份
+    const currentYear = new Date().getFullYear();
+    // 计算下一年除夕日期，中国除夕一般为农历腊月三十，对应公历每年不同，这里简单以次年2月9日为例，可按需精确调整
+    const newYearEve = new Date(`${currentYear + 1}-02-09T00:00:00`);
     function updateCountdown() {
       const now = new Date();
       const diff = newYearEve - now;
@@ -45,3 +60,4 @@
 </body>
 
 </html>
+
