@@ -3,61 +3,79 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>除夕倒计时</title>
+  <meta name="viewport"="width=device-width, initial-scale=1.0">
+  <title>大熊淘客导航</title>
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      background-image: url('https://example.com/your-background-image.jpg'); /* 替换为你喜欢的背景图片链接 */
-      background-size: cover;
-      background-position: center;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #5da3b0;
       margin: 0;
       padding: 0;
     }
-
-    h1 {
-      color: #ff6b6b;
-      font-size: 48px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-      margin-bottom: 30px;
-    }
-
-    p {
+    nav {
+      background-color: #333;
       color: #fff;
-      font-size: 32px;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
-  <h1>距离除夕还有多久</h1>
-  <p id="countdown"></p>
-
-  <script>
-    // 获取当前年份
-    const currentYear = new Date().getFullYear();
-    // 计算下一年除夕日期，中国除夕一般为农历腊月三十，对应公历每年不同，这里简单以次年2月9日为例，可按需精确调整
-    const newYearEve = new Date(`${currentYear + 1}-02-09T00:00:00`);
-    function updateCountdown() {
-      const now = new Date();
-      const diff = newYearEve - now;
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-      const countdownText = `距离除夕还有：${days}天 ${hours}小时 ${minutes}分钟 ${seconds}秒`;
-      document.getElementById('countdown').innerHTML = countdownText;
-      setTimeout(updateCountdown, 1000);
-    }
-    updateCountdown();
-  </script>
+	<h1>大熊淘客导航</h1>
+  <nav>
+  	 <ul>
+      <li><a href="https://www.baidu.com">百度</a></li>
+      <li><a href="https://www.taobao.com">淘宝</a></li>
+      <li><a href="https://www.jd.com">京东</a></li>
+      <li><a href="https://www.bilibili.com">哔哩哔哩</a></li>
+      <li><a href="https://www.youku.com">优酷</a></li>
+      <li><a href="https://www.douyin.com/?recommend=1">抖音</a></li>
+      <li><a href="https://music.163.com/#/song?id=1488990357">网易云</a></li>
+    </ul>
+<hr />  <!--分割线--><!--分割线--><!--分割线--><!--分割线--><!--分割线--><!--分割线--><!--分割线--><!--分割线-->
+    
+    <ul>
+      <li><a href="https://pub.alimama.com/">淘宝联盟</a></li>
+      <li><a href="https://fuwu.alimama.com/portal/v2/pages/businessOrder/list/index.htm">放单宝</a></li>
+      <li><a href="https://www.taokouling.com/">淘口令解析</a></li>
+      <li><a href="https://publish.haodanku.com/Promotioncenter/index">好单库</a></li>
+      <li><a href="https://www.doulaoban.com/taobao/order-manage/order-list">抖老板</a></li>
+      <li><a href="https://cli.im/">草料二维码</a></li>
+      <li><a href="https://www.doubao.com/chat/250846633031426">豆包</a></li>
+    </ul>
+    
+<hr />  <!--分割线--><!--分割线--><!--分割线--><!--分割线--><!--分割线--><!--分割线--><!--分割线--><!--分割线-->
+    
+    <ul>
+      <li><a href="https://cms.iyunzk.com/cms">云中客首页</a></li>
+      <li><a href="https://cms.iyunzk.com/cms/ShortLink/log">云中客短链接</a></li>
+      <li><a href="https://cms.iyunzk.com/cms/superPage">云中客超级单页</a></li>
+      <li><a href="https://cms.iyunzk.com/wx/FenWei_rw">云中客群氛围</a></li>
+      <li><a href="https://uutool.cn/301/">短链接还原</a></li>
+      <li><a href="https://shimo.im/blog">石墨文档</a></li>
+    </ul>
+   
+  </nav>
 </body>
 
 </html>
-
