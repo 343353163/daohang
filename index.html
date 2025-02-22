@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大熊导航测试｜2025</title>
+    <title>大熊导航备忘录｜非商业</title>
     <style>
         :root {
             --primary: #6c5ce7;  
@@ -11,7 +11,7 @@
             --bg: linear-gradient(135deg, #f8f9fa 0%, #e8f4ff 100%);
             --card-shadow: 0 6px 20px rgba(108,92,231,0.1);
         }
- 
+
         body {
             background: var(--bg);
             font-family: 'Segoe UI', system-ui;
@@ -19,7 +19,7 @@
             margin: 0;
             padding: 2rem;
         }
- 
+
         .header {
             text-align: center;
             margin-bottom: 3rem;
@@ -33,15 +33,17 @@
             border-radius: 50px;
             box-shadow: var(--card-shadow);
         }
- 
+
+        /* 修改的核心部分开始 */
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* 修改列宽 */
             gap: 2rem;
-            max-width: 1200px;
+            max-width: 1400px;  /* 扩大容器宽度 */
             margin: 0 auto;
         }
- 
+        /* 修改的核心部分结束 */
+
         .category-card {
             background: white;
             border-radius: 16px;
@@ -54,7 +56,7 @@
         .category-card:hover {
             transform: translateY(-5px);
         }
- 
+
         .category-title {
             color: var(--primary);
             margin: 0 0 1.5rem 0;
@@ -68,7 +70,7 @@
             content: '◆';
             color: var(--secondary);
         }
- 
+
         .nav-link {
             display: flex;
             align-items: center;
@@ -94,9 +96,10 @@
 </head>
 <body>
     <div class="header">
-        <h1>大熊导航测试｜2025</h1>
+        <h1>大熊导航备忘录｜非商业</h1>
     </div>
- 
+
+    <!-- 以下内容保持不变 -->
     <div class="grid-container">
         <!-- 常用系列 -->
         <div class="category-card">
@@ -111,7 +114,7 @@
             <a class="nav-link" href="https://jiema.wwei.cn/" target="_blank">二维码解析</a>
             <a class="nav-link" href="https://www.nuanque.com/ps/" target="_blank">在线PS</a>
         </div>
- 
+
         <!-- 电商工具 -->
         <div class="category-card">
             <h3 class="category-title">电商运营</h3>
@@ -122,7 +125,7 @@
             <a class="nav-link" href="[天猫超市长链接]" target="_blank">天猫超市H5</a>
             <a class="nav-link" href="https://market.m.taobao.com/app/im/chat/index.html?#/" target="_blank">淘宝聊天</a>
         </div>
- 
+
         <!-- 云服务 -->
         <div class="category-card">
             <h3 class="category-title">云中客</h3>
@@ -133,7 +136,7 @@
             <a class="nav-link" href="https://portal.xiaomark.com/app/sl?sl=%2Fshortlink%2Fshortlink%3Fpage%3D1" target="_blank">小码短链</a>
             <a class="nav-link" href="https://uutool.cn/301/" target="_blank">短链还原</a>
         </div>
- 
+
         <!-- 营销工具 -->
         <div class="category-card">
             <h3 class="category-title">好单库</h3>
@@ -142,14 +145,14 @@
             <a class="nav-link" href="https://www.haodanku.com/tool/universal_password" target="_blank">万能口令</a>
             <a class="nav-link" href="https://www.haodanku.com/tool/supermarke.html" target="_blank">超市实拍</a>
         </div>
- 
+
         <!-- 数据平台 -->
         <div class="category-card">
             <h3 class="category-title">大淘客</h3>
             <a class="nav-link" href="https://www.dataoke.com/tools" target="_blank">工具中心</a>
             <a class="nav-link" href="https://www.dataoke/t.comoolstype?=22" target="_blank">实拍素材</a>
         </div>
- 
+
         <!-- 其他平台 -->
         <div class="category-card">
             <h3 class="category-title">其他平台</h3>
@@ -157,7 +160,7 @@
             <a class="nav-link" href="https://mp.weixin.qq.com/" target="_blank">公众号平台</a>
             <a class="nav-link" href="https://api.weibo.com/chat#/chat" target="_blank">微博聊天</a>
         </div>
- 
+
         <!-- 娱乐休闲 -->
         <div class="category-card">
             <h3 class="category-title">影视娱乐</h3>
